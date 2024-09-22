@@ -13,7 +13,10 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-transparent fixed z-10 w-full">
+    <nav
+      class="bg-transparent fixed z-10 w-full transition duration-300 ease-in-out"
+      id="navbar"
+    >
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
@@ -23,14 +26,15 @@
         >
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+            id="logo"
             >Web Kemiskinan</span
           >
         </a>
         <button
-          data-collapse-toggle="navbar-default"
+          data-collapse-toggle="navbar-menu"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none"
+          aria-controls="navbar"
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
@@ -50,42 +54,42 @@
             />
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
           <ul
             class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
           >
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300"
+                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
                 >Beranda</a
               >
             </li>
             <li>
               <a
                 href="dataKemiskinan.html"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300"
+                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
                 >Data Kemiskinan</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300"
+                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
                 >Program</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300"
+                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
                 >Laporan</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300"
+                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
                 >Tentang Kami</a
               >
             </li>
@@ -102,48 +106,76 @@
       data-carousel="slide"
     >
       <div class="relative w-full h-full overflow-hidden">
-        <!-- Item 1 -->
+        <div class="bg-black">.</div>
+        <!-- gambar 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="/src/img/gambar1.png"
             class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover brightness-50"
             alt="..."
           />
+          <div
+            class="absolute inset-0 flex items-center justify-center"
+            data-aos="fade-up"
+          >
+            <p class="text-white text-4xl lg:text-6xl font-bold font">
+              Kemiskinan
+            </p>
+          </div>
         </div>
-        <!-- Item 2 -->
+        <!-- Gambar 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="/src/img/gambar2.png"
             class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover brightness-50"
             alt="..."
           />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <p class="text-white text-4xl lg:text-6xl font-bold font">
+              Dingin Tetapi tidak Kejam
+            </p>
+          </div>
         </div>
-        <!-- Item 3 -->
+        <!-- Gambar 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="/src/img/gambar3.png"
             class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover brightness-50"
             alt="..."
           />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <p class="text-white text-4xl lg:text-6xl font-bold font">
+              Tidak akan
+            </p>
+          </div>
         </div>
-        <!-- Item 4 -->
+        <!-- Gambar 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="/src/img/gambar4.png"
             class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover brightness-50"
             alt="..."
           />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <p class="text-white text-4xl lg:text-6xl font-bold font">
+              Aku Adalah Kemiskinan
+            </p>
+          </div>
         </div>
-        <!-- Item 5 -->
+        <!-- Gambar 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="/src/img/gambar5.png"
             class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover brightness-50"
             alt="..."
           />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <p class="text-white text-4xl lg:text-6xl font-bold font">
+              hahahahaha
+            </p>
+          </div>
         </div>
       </div>
-      <!-- indikator -->
       <div
         class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
       >
@@ -183,7 +215,6 @@
           data-carousel-slide-to="4"
         ></button>
       </div>
-      <!-- button -->
       <button
         type="button"
         class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
@@ -282,6 +313,31 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        const logo = document.getElementById("logo");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-white", "shadow-lg");
+          navbar.classList.remove("bg-transparent");
+          logo.classList.add("text-black");
+          logo.classList.remove("text-white");
+          navLinks.forEach((link) => {
+            link.classList.add("text-black");
+            link.classList.remove("text-white");
+          });
+        } else {
+          navbar.classList.add("bg-transparent");
+          navbar.classList.remove("bg-white", "shadow-lg");
+          logo.classList.add("text-white");
+          logo.classList.remove("text-black");
+          navLinks.forEach((link) => {
+            link.classList.add("text-white");
+            link.classList.remove("text-black");
+          });
+        }
+      });
     </script>
   </body>
 </html>
