@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Kemiskinan</title>
+    <link rel="stylesheet" href="/src/output.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet"/>
+    <style>
+      #myChartContainer {
+        width: 100%;
+        height: 350px;
+      }
+    
+      @media (max-width: 768px) {
+        #myChartContainer {
+          height: 3000px;
+        }
+      }
+    </style>
+  </head>
+  <body background="../src/img/yahaha.jpg" class="bg-no-repeat">
+    <!-- navbar -->
+    <nav
+    class="bg-white fixed z-10 w-full transition duration-300 ease-in-out shadow-lg"
+    id="navbar"
+  >
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+    >
+      <a
+        href="https://flowbite.com/"
+        class="flex items-center space-x-3 rtl:space-x-reverse"
+      >
+        <span
+          class="self-center text-2xl font-semibold whitespace-nowrap text-black"
+          id="logo"
+          >Web Kemiskinan</span
+        >
+      </a>
+      <button
+        data-collapse-toggle="navbar-menu"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden focus:outline-none"
+        aria-controls="navbar"
+        aria-expanded="false"
+        id="toggle"
+      >
+        <span class="sr-only">menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
+        
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
+        >
+        <li></li>
+          <a
+            href="beranda.html"
+            class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+            >Beranda</a
+          >
+        </li>
+          <li
+            
+              id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbar"
+              class="py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between"
+            >
+              Data Kemiskinan
+              <svg
+                class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </>
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                aria-labelledby="dropdownLargeButton"
+              >
+                <li>
+                  <a
+                    href="per-daerah.html"
+                    class="block px-4 py-2 hover:bg-gray-100 underline underline-offset-8 hover:text-black"
+                    >Data Per-daerah</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="satu-dekade.html"
+                    class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                    >Data Satu Dekade</a
+                  >
+                </li>
+            </div>
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span>
+          </li>
+          <li>
+            <a
+              href="program.html"
+              class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
+              >Program</a
+            >
+          </li>
+          <li>
+            <a
+              href="laporan.html"
+              class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
+              >Laporan</a
+            >
+          </li>
+          <li>
+            <a
+              href="tentangKami.html"
+              class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
+              >Tentang Kami</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+    <div class="p-4 bg-white">
+    <div class="text-center pt-20 font-bold text-1xl md:text-1xl">Persentase Kemiskinan Berdasarkan <br>Daerah Tahun 2024</div>
+    <div class="px-3">
+      <p class="text-justify text-gray-600">
+        Berikut ini adalah data persentase kemiskinan yang dibagi berdasarkan perkotaan dan pedesaan di setiap provinsi di Indonesia untuk tahun 2024. Data ini dapat membantu memberikan wawasan mengenai kondisi sosial ekonomi di berbagai daerah dan menjadi acuan dalam pengambilan keputusan terkait kebijakan pengentasan kemiskinan.
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div id="myChartContainer">
+      <canvas id="myChart"></canvas>
+    </div>
+    </div>
+    <script>
+      const labels = ['Aceh', 'Sumatera Utara', 'Sumatera Barat', 'Riau', 'Jambi', 'Sumatera Selatan', 'Bengkulu', 'Lampung', 'Kep.Bangka Belitung', 'Kep.Riau', 'DKI Jakarta', 'Jawa Barat', 'Jawa Tengah', 'DI Yogyakarta', 'Jawa Timur', 'Banten', 'Bali', 'NTB', 'NTT', 'Kalimantan Barat', 'Kalimantan Tengah', 'Kalimantan Selatan', 'Kalimantan Timur', 'Kalimantan Utara', 'Sulawesi Utara', 'Sulawesi Tengah', 'Sulawesi Selatan', 'Sulawesi Tenggara', 'Gorontalo', 'Sulawesi Barat', 'Maluku', 'Maluku Utara', 'Papua Barat', 'Papua Barat Daya', 'Papua', 'Papua Selatan', 'Papua Tengah', 'Papua Pegunungan'];
+      const data = {
+          labels: labels,
+          datasets: [
+              {
+                  label: 'Perkotaan',
+                  data: [9.60, 7.93, 4.72, 6.76, 9.50, 10.04, 13.56, 8.18, 3.39, 4.85, 4.30, 7.07, 9.71, 10.29, 7.12, 5.69, 3.55, 12.86, 8.57, 4.25, 4.89, 3.62, 4.47, 4.73, 4.75, 8.61, 5.08, 7.45, 4.57, 9.29, 5.14, 6.12, 8.17, 8.51, 6.33, 3.10, 4.32, 16.56],
+                  backgroundColor: '#16325B',
+              },
+              {
+                  label: 'Pedesaan',
+                  data: [16.75, 8.08, 7.28, 6.61, 5.90, 11.53, 13.56, 11.97, 6.17, 9.94, 0, 9.07, 11.34, 12.49, 13.30, 6.44, 5.20, 12.95, 23.41, 7.58, 5.38, 4.61, 8.76, 9.23, 10.35, 13.33, 10.74, 13.60, 22.97, 11.70, 24.43, 6.41, 27.68, 27.78, 33.67, 25.64, 37.98, 34.21],
+                  backgroundColor: '#227B94',
+              },
+              {
+                  label: 'Jumlah',
+                  data: [14.23, 7.99, 5.97, 6.67, 7.10, 10.97, 13.56, 10.69, 4.55, 5.37, 4.30, 7.46, 10.47, 10.83, 9.79, 5.84, 4, 12.91, 19.48, 6.32, 5.17, 4.11, 5.78, 6.32, 7.25, 11.77, 8.06, 11.21, 14.57, 11.21, 16.05, 6.32, 21.66, 18.13, 17.26, 17.44, 29.76, 32.97],
+                  backgroundColor: '#78B7D0',
+              }
+          ]
+      };
+
+      function getChartConfig() {
+    const screenWidth = window.innerWidth;
+    const isMobile = screenWidth < 768;
+    const indexAxis = isMobile ? 'y' : 'x';
+
+    return {
+      type: 'bar',
+      data: data,
+      options: {
+        indexAxis: indexAxis,
+        maintainAspectRatio: false, // Biarkan grafik mengisi kontainer
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+            align: 'end',
+          },
+        }
+      },
+    };
+  }
+
+  let myChart = new Chart(document.getElementById('myChart'), getChartConfig());
+
+  window.addEventListener('resize', function() {
+    myChart.destroy();
+    myChart = new Chart(document.getElementById('myChart'), getChartConfig());
+  });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
