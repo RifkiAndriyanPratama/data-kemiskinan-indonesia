@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="bg-white fixed z-10 w-full transition duration-300 ease-in-out"
+      id="navbar"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-black"
+            id="logo"
+            >Web Kemiskinan</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-menu"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden focus:outline-none"
+          aria-controls="navbar"
+          aria-expanded="false"
+          id="toggle"
+        >
+          <span class="sr-only">menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
+          
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
+          >
+          <li></li>
+            <a
+              href="beranda.html"
+              class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+              >Beranda</a
+            >
+          </li>
+            <li
+              
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between"
+              >
+                Data Kemiskinan
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                      >Data Per-daerah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                      >Data Satu Dekade</a
+                    >
+                  </li>
+              </div>
+              <span
+                class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+              ></span>
+            </li>
+            <li>
+              <a
+                href="program.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 underline underline-offset-8 nav-link"
+                >Program</a
+              >
+            </li>
+            <li>
+              <a
+                href="laporan.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
+                >Laporan</a
+              >
+            </li>
+            <li>
+              <a
+                href="tentangKami.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
+                >Tentang Kami</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Program -->
+    <div class="pt-20">
+      <section class="bg-white">
+        <div class="container px-6 py-10 mx-auto">
+          <h1
+            class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white"
+          >
+            Program Pengentasan <span class="text-teal-500">Kemiskinan</span> oleh Pemerintah
+          </h1>
+
+          
+
+          <div
+            class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-3 xl:grid-cols-3">
+            <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group" data-aos="fade-up" data-aos-duration="400"
+              style="background-image: url('/src/img/kartujakarta.png')">
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-300 opacity-0 bg-gray-800/60 group-hover:opacity-100">
+                <h2 class="mt-4 text-2xl font-semibold text-white capitalize" >
+                  Kartu Jakarta Pintar
+                </h2>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group" data-aos="fade-up" data-aos-duration="500"
+              style="background-image: url('/src/img/jps.png')">
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-300 opacity-0 bg-gray-800/60 group-hover:opacity-100">
+                <h2 class="mt-4 text-2xl font-semibold text-white capitalize">
+                  Jaring Pengaman Sosial 
+                </h2>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group" data-aos="fade-up" data-aos-duration="600"
+              style="background-image: url('/src/img/kjs.png')">
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-300 opacity-0 bg-gray-800/60 group-hover:opacity-100">
+                <h2 class="mt-4 text-2xl font-semibold text-white capitalize">
+                  Kartu Jateng Sejahtera
+                </h2>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group" data-aos="fade-up" data-aos-duration="700"
+              style="background-image: url('/src/img/rasda.png')">
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-300 opacity-0 bg-gray-800/60 group-hover:opacity-100">
+                <h2 class="mt-4 text-2xl font-semibold text-white capitalize">
+                  Bantuan Subsidi Beras Daerah 
+                </h2>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group" data-aos="fade-up" data-aos-duration="800"
+              style="background-image: url('/src/img/blt.png')">
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-300 opacity-0 bg-gray-800/60 group-hover:opacity-100">
+                <h2 class="mt-4 text-2xl font-semibold text-white capitalize">
+                  Bantuan Langsung Tunai
+                </h2>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group" data-aos="fade-up" data-aos-duration="900"
+              style="background-image: url('/src/img/pkh.png')">
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-300 opacity-0 bg-gray-800/60 group-hover:opacity-100">
+                <h2 class="mt-4 text-2xl font-semibold text-white capitalize">
+                  Program Keluarga Harapan
+                </h2>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Program End -->
+
+    <!-- Pengelompokan berdasarkan daerah -->
+    <div
+      class="relative mx-4 mt-4 flex flex-col gap-4 mbn-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none md:flex-row md:items-center pt-20 md:pl-0 text-center">
+      <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white mx-auto">
+        Program Pengentasan <span class="text-teal-500">Kemiskinan</span> Pada Setiap Daerah
+      </h1>
+    </div>
+    <div class="flex flex-wrap justify-center">
+      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:gap-12 md:grid-cols-2 lg:grid-cols-2 px-4">
+        <!-- DKI JAKARTA -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-right" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/jakarta.png" alt="Jakarta">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">DKI JAKARTA</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Kartu Jakarta Pintar (KJP): Program bantuan pendidikan bagi anak-anak dari keluarga miskin agar mereka tetap bisa bersekolah. <br><br>
+                Kartu Lansia Jakarta (KLJ): Bantuan sosial bagi warga lansia yang tidak mampu, diberikan dalam bentuk uang tunai setiap bulan. <br><br>
+                Pembangunan Rusunawa (Rumah Susun Sederhana Sewa): Program ini menyediakan hunian layak dan terjangkau bagi warga yang tidak mampu. <br><br>
+                Jakarta Smart City: Pengembangan program digitalisasi dan layanan publik berbasis teknologi untuk meningkatkan efisiensi distribusi bantuan sosial dan pelayanan masyarakat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- JAWA BARAT -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-left" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/jawa-barat.png" alt="Jawa Barat">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">JAWA BARAT</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Program Desa Mandiri: Fokus pada pemberdayaan desa untuk mengoptimalkan potensi lokal melalui pertanian, peternakan, dan pariwisata desa. <br><br>
+                Samsara: Program bantuan permodalan untuk usaha mikro dan kecil, yang ditargetkan bagi pengusaha kecil di daerah pedesaan. <br><br>
+                Jaring Pengaman Sosial (JPS): Bantuan tunai dan non-tunai bagi masyarakat miskin yang terkena dampak bencana atau krisis ekonomi. <br><br>
+                Program Rutilahu (Rumah Tidak Layak Huni): Bantuan renovasi rumah bagi keluarga miskin agar bisa tinggal di rumah yang layak huni.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- JAWA TENGAH -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-right" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/jawa-tengah.png" alt="Jawa Tengah">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">JAWA TENGAH</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Kartu Jateng Sejahtera (KJS): Program bantuan sosial yang ditujukan kepada masyarakat yang tergolong miskin atau rentan miskin. <br><br>
+                Bantuan Operasional Sekolah Daerah (BOSDA): Dana bantuan bagi sekolah-sekolah di daerah terpencil atau kurang mampu. <br><br>
+                Program Kredit Usaha Rakyat Daerah (KURDA): Program kredit mikro berbunga rendah yang disediakan oleh pemerintah daerah bagi pelaku usaha kecil dan menengah. <br><br>
+                Pembangunan Embung Desa: Proyek infrastruktur di desa-desa untuk menyediakan irigasi bagi pertanian dan meningkatkan produktivitas hasil tani.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- JAWA TIMUR -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-left" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/jawa-timur.png" alt="Jawa Timur">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">JAWA TIMUR</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Program Kelompok Usaha Bersama (KUBE): Program pemberdayaan masyarakat dalam bentuk kelompok usaha yang diberikan modal dan pelatihan. <br><br>
+                Bantuan Subsidi Beras Daerah (RASDA): Penyediaan beras bersubsidi bagi keluarga miskin agar ketahanan pangan tetap terjaga. <br><br>
+                Program Bantuan Langsung Tunai Daerah (BLT-D): Bantuan tunai bagi keluarga miskin yang terdampak kondisi ekonomi buruk atau krisis. <br><br>
+                Program Bantuan Petani dan Nelayan: Pelatihan dan bantuan peralatan serta modal untuk meningkatkan kesejahteraan petani dan nelayan lokal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- SUMATERA BARAT -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-right" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/sumatera-barat.png" alt="Sumatera Barat">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">SUMATERA BARAT</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Program Nagari Mandiri: Pengembangan desa mandiri berbasis potensi lokal, seperti pertanian, pariwisata, dan kerajinan tangan, untuk memberdayakan ekonomi masyarakat. <br><br>
+                Program Padat Karya: Penyediaan lapangan kerja bagi masyarakat miskin melalui proyek pembangunan infrastruktur di nagari-nagari. <br><br>
+                Gerakan Nagari Sejahtera: Program peningkatan kesejahteraan dengan dukungan akses modal, pelatihan kerja, dan pengembangan infrastruktur ekonomi lokal. <br><br>
+                Program Pengentasan Kemiskinan Melalui Pendidikan: Beasiswa dan bantuan sekolah bagi anak-anak dari keluarga kurang mampu.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ACEH -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-left" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/aceh.png" alt="Aceh">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">ACEH</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Bantuan Usaha Mikro Aceh (BUMA): Program pemberian modal usaha dan pelatihan bagi pelaku usaha kecil untuk meningkatkan perekonomian daerah. <br><br>
+                Gerakan Pembangunan Ekonomi Aceh (GEMA): Fokus pada pengembangan sektor pertanian, perikanan, dan industri rumah tangga untuk menciptakan lapangan kerja dan meningkatkan pendapatan masyarakat. <br><br>
+                Program Keluarga Harapan Daerah (PKH-Aceh): Implementasi dari PKH nasional yang disesuaikan dengan kondisi lokal, memberikan bantuan kepada keluarga miskin dengan syarat tertentu. <br><br>
+                Pembangunan Rumah Layak Huni untuk Korban Konflik dan Tsunami: Pembangunan rumah bagi korban konflik dan tsunami yang masih tinggal di daerah terpencil atau tenda-tenda pengungsian.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- PAPUA -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-right" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/papua.png" alt="Papua">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">PAPUA</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Program Pembangunan Masyarakat Kampung: Membangun infrastruktur dan memberikan pelatihan bagi masyarakat di kampung-kampung terpencil agar bisa mengembangkan ekonomi mandiri. <br><br>
+                Program Bantuan Modal Usaha Bagi Masyarakat Adat: Bantuan modal dan pelatihan bisnis bagi masyarakat adat agar dapat mengembangkan usaha lokal. <br><br>
+                Program Papua Sehat: Fokus pada peningkatan akses kesehatan di daerah-daerah terpencil melalui klinik bergerak dan bantuan obat-obatan. <br><br>
+                Program Pendidikan Gratis di Daerah Pedalaman: Peningkatan akses pendidikan melalui penyediaan sekolah gratis dan pengiriman tenaga pengajar ke daerah pedalaman.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- NUSA TENGGARA TIMUR -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-left" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/ntt.png" alt="Nusa Tenggara Timur">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">NUSA TENGGARA TIMUR</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Program Desa Tangguh Bencana: Pengembangan infrastruktur dan pelatihan masyarakat untuk menghadapi bencana alam yang sering terjadi di wilayah ini. <br><br>
+                Program Pengembangan Pariwisata Berbasis Komunitas: Mendorong desa-desa wisata untuk mengelola potensi pariwisata alam agar dapat meningkatkan ekonomi lokal. <br><br>
+                Bantuan Kesehatan Ibu dan Anak: Program bantuan kesehatan bagi ibu hamil dan anak-anak di daerah terpencil yang sulit dijangkau oleh fasilitas kesehatan. <br><br>
+                Program Pembangunan Embung dan Sumur Bor: Penyediaan air bersih dan irigasi bagi daerah-daerah yang sering mengalami kekeringan, terutama untuk mendukung sektor pertanian.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- SULAWESI SELATAN -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-right" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/sulsel.png" alt="Sulawesi Selatan">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">SULAWESI SELATAN</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Gerakan Sulsel Bebas Kemiskinan (GSBK): Program terpadu yang mengintegrasikan sektor pendidikan, kesehatan, dan pemberdayaan ekonomi untuk mengurangi kemiskinan. <br><br>
+                Bantuan Modal dan Pelatihan bagi Nelayan: Memberikan pelatihan dan modal usaha kepada nelayan agar dapat meningkatkan hasil tangkapan dan pendapatan. <br><br>
+                Program Bantuan Pertanian Terpadu: Bantuan bagi petani dalam bentuk bibit unggul, alat pertanian, serta pelatihan teknik pertanian modern. <br><br>
+                Program Kredit Mikro untuk UKM: Kredit dengan bunga rendah yang ditujukan untuk pengusaha kecil dan menengah untuk mengembangkan usaha mereka.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- BALI -->
+        <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-4" data-aos="fade-left" data-aos-duration="400">
+          <img class="object-cover w-full h-64" src="/src/img/bali.png" alt="Bali">
+          <div class="p-6">
+            <div>
+              <h1 class="font-bold text-2xl">BALI</h1>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Pengembangan Desa Wisata: Program pengentasan kemiskinan melalui pengembangan desa wisata berbasis budaya dan alam yang dikelola oleh masyarakat setempat. <br><br>
+                Program Pangan Lokal Bali: Meningkatkan ketahanan pangan melalui produksi dan promosi pangan lokal, termasuk upaya untuk mengurangi ketergantungan terhadap pangan impor. <br><br>
+                Bantuan Modal bagi UMKM Pariwisata: Pemberian bantuan modal usaha bagi UMKM yang bergerak di bidang pariwisata, kerajinan tangan, dan kuliner lokal. <br><br>
+                Program Kemitraan Pariwisata Berkelanjutan: Melibatkan masyarakat lokal dalam pengelolaan potensi wisata agar dapat menciptakan lapangan kerja dan meningkatkan ekonomi lokal. <br><br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+  
+    
+    
+
+    <!-- Pengelompokan berdasarkan daerah end -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function openModal(modalId) {
+        document.getElementById(modalId).classList.remove("hidden");
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>

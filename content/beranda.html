@@ -36,8 +36,9 @@
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none"
           aria-controls="navbar"
           aria-expanded="false"
+          id="toggle"
         >
-          <span class="sr-only">Open main menu</span>
+          <span class="sr-only">menu</span>
           <svg
             class="w-5 h-5"
             aria-hidden="true"
@@ -55,41 +56,86 @@
           </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
+          
           <ul
             class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
           >
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
-                >Beranda</a
+          <li></li>
+            <a
+              href="beranda.html"
+              class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 underline underline-offset-8 nav-link"
+              >Beranda</a
+            >
+          </li>
+            <li
+              
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between"
               >
+                Data Kemiskinan
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                      >Data Per-daerah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                      >Data Satu Dekade</a
+                    >
+                  </li>
+              </div>
+              <span
+                class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+              ></span>
             </li>
             <li>
               <a
-                href="dataKemiskinan.html"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
-                >Data Kemiskinan</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
+                href="program.html"
+                class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link"
                 >Program</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
+                href="laporan.html"
+                class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link"
                 >Laporan</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 px-3 text-white rounded hover:text-gray-300 nav-link"
+                href="tentangKami.html"
+                class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link"
                 >Tentang Kami</a
               >
             </li>
@@ -118,8 +164,11 @@
             class="absolute inset-0 flex items-center justify-center"
             data-aos="fade-up"
           >
-            <p class="text-white text-4xl lg:text-6xl font-bold font">
-              Kemiskinan
+            <p
+              class="text-white text-3xl lg:text-6xl font-bold italic text-center"
+            >
+              "Kesetaraan dimulai <br />
+              dengan menghapus kemiskinan"
             </p>
           </div>
         </div>
@@ -131,8 +180,11 @@
             alt="..."
           />
           <div class="absolute inset-0 flex items-center justify-center">
-            <p class="text-white text-4xl lg:text-6xl font-bold font">
-              Dingin Tetapi tidak Kejam
+            <p
+              class="text-white text-3xl lg:text-6xl font-bold italic text-center"
+            >
+              "Setiap orang berhak <br />
+              hidup sejahtera"
             </p>
           </div>
         </div>
@@ -144,8 +196,11 @@
             alt="..."
           />
           <div class="absolute inset-0 flex items-center justify-center">
-            <p class="text-white text-4xl lg:text-6xl font-bold font">
-              Tidak akan
+            <p
+              class="text-white text-3xl lg:text-6xl font-bold italic text-center"
+            >
+              "Hidup layak <br />
+              adalah hak semua orang"
             </p>
           </div>
         </div>
@@ -156,9 +211,12 @@
             class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover brightness-50"
             alt="..."
           />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <p class="text-white text-4xl lg:text-6xl font-bold font">
-              Aku Adalah Kemiskinan
+          <div
+            class="absolute inset-0 flex items-center justify-center text-center"
+          >
+            <p class="text-white text-3xl lg:text-6xl font-bold italic">
+              "Peluang yang setara <br />
+              harapan untuk semua"
             </p>
           </div>
         </div>
@@ -170,8 +228,11 @@
             alt="..."
           />
           <div class="absolute inset-0 flex items-center justify-center">
-            <p class="text-white text-4xl lg:text-6xl font-bold font">
-              hahahahaha
+            <p
+              class="text-white text-3xl lg:text-6xl font-bold font text-center italic"
+            >
+              "Harapan baru dimulai <br />
+              dengan mengatasi kemiskinan"
             </p>
           </div>
         </div>
@@ -271,43 +332,40 @@
     <!-- hero section end -->
 
     <!-- Rngkasan -->
-    <div class="container pt-10 lg:mx-auto lg:mt-28">
+    <div class="container pt-10 lg:mx-auto md:mx-auto lg:mt-28 mb-10">
       <div class="flex flex-col md:flex-row items-center justify-center">
         <div
-          class="w-full self-center px-4 md:w-1/2 lg:w-1/2"
+          class="w-full self-center px-4 md:w-1/2 lg:w-1/2 text-center"
           data-aos="fade-right"
         >
-          <h1 class="text-4xl font-semibold">Ringkasan Singkat</h1>
-          <h2 class="font-medium text-lg mb-5 text-slate-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            dolores aut doloremque sit consectetur in laborum. Quam incidunt
-            veniam sapiente facilis! Maxime ipsum vero delectus pariatur quis,
-            reiciendis ea! Voluptatibus?
+          <h1 class="text-4xl font-semibold text-center md:text-left">Kemiskinan di Indonesia</h1>
+          <h2 class="font-medium text-xl mb-10 text-slate-600 mt-4 text-justify">
+            Kemiskinan merupakan masalah yang kompleks dan berkaitan dengan berbagai
+            faktor, seperti akses terbatas terhadap pendidikan, layanan
+            kesehatan, pekerjaan yang layak, dan distribusi sumber daya yang
+            tidak merata. Oleh karena itu, pemerintah Indonesia berupaya untuk membuat program yang berguna untuk mengurangi kemiskinan di Indonesia.
           </h2>
+          <a
+            href="program.html"
+            class="py-4 px-8 bg-slate-600 hover:bg-blue-900 rounded-md text-white mb-4 text-lg font-medium hover:shadow-lg transition duration-300"
+          >
+            Lihat Program</a
+          >
         </div>
         <div
           class="w-full self-center px-4 md:w-1/2 lg:w-1/2 mt-4 md:mt-0 md:ml-4"
-          data-aos="fade-left"
+          data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"
         >
           <img
             src="/src/img/image.png"
             alt=""
-            class="w-full h-auto rounded-lg"
+            class="w-full h-auto rounded-lg hover:scale-105 hover:-rotate-3 duration-300 hover:shadow-2xl mt-10"
           />
         </div>
       </div>
     </div>
     <!-- Rngkasan end -->
-
-    <!-- footer -->
-    <footer>
-      <div class="bg-gray-900 mt-64">
-        <p class="text-xl font-bold text-center text-white">
-          Tentang Kemiskinan
-        </p>
-      </div>
-    </footer>
-    <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -317,6 +375,7 @@
         const navbar = document.getElementById("navbar");
         const logo = document.getElementById("logo");
         const navLinks = document.querySelectorAll(".nav-link");
+        const tombol = document.getElementById("toggle");
 
         if (window.scrollY > 50) {
           navbar.classList.add("bg-white", "shadow-lg");
@@ -327,6 +386,8 @@
             link.classList.add("text-black");
             link.classList.remove("text-white");
           });
+          tombol.classList.add("text-black");
+          tombol.classList.remove("text-white");
         } else {
           navbar.classList.add("bg-transparent");
           navbar.classList.remove("bg-white", "shadow-lg");
@@ -336,6 +397,8 @@
             link.classList.add("text-white");
             link.classList.remove("text-black");
           });
+          tombol.classList.add("text-white");
+          tombol.classList.remove("text-black");
         }
       });
     </script>
