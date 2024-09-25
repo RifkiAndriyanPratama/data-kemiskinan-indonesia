@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bahtera - Program</title>
     <link rel="stylesheet" href="/src/output.css">
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
@@ -13,15 +13,15 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="bg-white fixed z-10 w-full transition duration-300 ease-in-out" id="navbar">
+    <nav class="bg-bahtera fixed z-10 w-full transition duration-300 ease-in-out shadow-lg" id="navbar">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-black" id="logo">Web Kemiskinan</span>
+          <span class="self-center text-4xl italic font-sans font-semibold whitespace-nowrap text-white" id="logo">Bahtera</span>
         </a>
         <button
           data-collapse-toggle="navbar-menu"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden focus:outline-none"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none"
           aria-controls="navbar"
           aria-expanded="false"
           id="toggle">
@@ -45,7 +45,7 @@
           <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
             <a
               href="beranda.html"
-              class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+              class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 nav-link"
               >Beranda</a
             >
           </li>
@@ -53,7 +53,7 @@
               
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                class="py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between"
+                class="py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between"
               >
                 Data Kemiskinan
                 <svg
@@ -84,14 +84,14 @@
                   <li>
                     <a
                       href="per-daerah.html"
-                      class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                      class="block px-4 py-2 hover:bg-gray-100 hover:text-white"
                       >Data Per-daerah</a
                     >
                   </li>
                   <li>
                     <a
                       href="satu-dekade.html"
-                      class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                      class="block px-4 py-2 hover:bg-gray-100 hover:text-white"
                       >Data Satu Dekade</a
                     >
                   </li>
@@ -103,21 +103,21 @@
             <li>
               <a
                 href="program.html"
-                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 underline underline-offset-8 nav-link"
+                class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 underline underline-offset-8 nav-link"
                 >Program</a
               >
             </li>
             <li>
               <a
                 href="laporan.html"
-                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
+                class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link"
                 >Laporan</a
               >
             </li>
             <li>
               <a
                 href="tentangKami.html"
-                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
+                class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link"
                 >Tentang Kami</a
               >
             </li>
@@ -132,9 +132,9 @@
       <section class="bg-white">
         <div class="container px-6 py-10 mx-auto">
           <h1
-            class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white"
+            class="text-3xl font-semibold text-center text-bahtera capitalize lg:text-4xl"
           >
-            Program Pengentasan <span class="text-teal-500">Kemiskinan</span> oleh Pemerintah
+            Program Pengentasan <span class="text-teal-600">Kemiskinan</span> oleh Pemerintah
           </h1>
 
           
@@ -211,8 +211,8 @@
     <!-- Pengelompokan berdasarkan daerah -->
     <div
       class="relative mx-4 mt-4 flex flex-col gap-4 mbn-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none md:flex-row md:items-center pt-20 md:pl-0 text-center">
-      <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white mx-auto">
-        Program Pengentasan <span class="text-teal-500">Kemiskinan</span> Pada Setiap Daerah
+      <h1 class="text-3xl font-semibold text-center text-gray-800 lg:text-4xl mx-auto">
+        Program Pengentasan <span class="text-teal-500">Kemiskinan</span> di Setiap Daerah
       </h1>
     </div>
     <div class="flex flex-wrap justify-center">

@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kemiskinan</title>
+    <title>Bahtera - Beranda</title>
     <link rel="stylesheet" href="/src/output.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- navbar -->
@@ -21,13 +25,13 @@
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
         <a
-          href="https://flowbite.com/"
+          href="beranda.html"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span
-            class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+            class="self-center text-4xl italic font-sans font-semibold whitespace-nowrap text-white"
             id="logo"
-            >Web Kemiskinan</span
+            >Bahtera</span
           >
         </a>
         <button
@@ -102,14 +106,14 @@
                   <li>
                     <a
                       href="per-daerah.html"
-                      class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                      class="block px-4 py-2 hover:bg-gray-100 hover:text-bahtera"
                       >Data Per-daerah</a
                     >
                   </li>
                   <li>
                     <a
                       href="satu-dekade.html"
-                      class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                      class="block px-4 py-2 hover:bg-gray-100 hover:text-bahtera"
                       >Data Satu Dekade</a
                     >
                   </li>
@@ -152,7 +156,7 @@
       data-carousel="slide"
     >
       <div class="relative w-full h-full overflow-hidden">
-        <div class="bg-black">.</div>
+        <div class="bg-bahtera">.</div>
         <!-- gambar 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
@@ -347,7 +351,7 @@
           </h2>
           <a
             href="program.html"
-            class="py-4 px-8 bg-slate-600 hover:bg-blue-900 rounded-md text-white mb-4 text-lg font-medium hover:shadow-lg transition duration-300"
+            class="py-4 px-8 bg-bahtera hover:bg-blue-900 rounded-md text-white mb-4 text-lg font-medium hover:shadow-lg transition duration-300"
           >
             Lihat Program</a
           >
@@ -380,25 +384,25 @@
         if (window.scrollY > 50) {
           navbar.classList.add("bg-white", "shadow-lg");
           navbar.classList.remove("bg-transparent");
-          logo.classList.add("text-black");
+          logo.classList.add("text-bahtera");
           logo.classList.remove("text-white");
           navLinks.forEach((link) => {
-            link.classList.add("text-black");
+            link.classList.add("text-bahtera");
             link.classList.remove("text-white");
           });
-          tombol.classList.add("text-black");
+          tombol.classList.add("text-bahtera");
           tombol.classList.remove("text-white");
         } else {
           navbar.classList.add("bg-transparent");
           navbar.classList.remove("bg-white", "shadow-lg");
           logo.classList.add("text-white");
-          logo.classList.remove("text-black");
+          logo.classList.remove("text-bahtera");
           navLinks.forEach((link) => {
             link.classList.add("text-white");
-            link.classList.remove("text-black");
+            link.classList.remove("text-bahtera");
           });
           tombol.classList.add("text-white");
-          tombol.classList.remove("text-black");
+          tombol.classList.remove("text-bahtera");
         }
       });
     </script>
