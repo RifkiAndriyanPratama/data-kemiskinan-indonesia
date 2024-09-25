@@ -9,69 +9,67 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
   <body>
     <!-- navbar -->
     <nav
-    class="bg-white fixed z-10 w-full transition duration-300 ease-in-out shadow-lg"
-    id="navbar"
-  >
-    <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      class="bg-white fixed z-10 w-full transition duration-300 ease-in-out shadow-lg"
+      id="navbar"
     >
-      <a
-        href="https://flowbite.com/"
-        class="flex items-center space-x-3 rtl:space-x-reverse"
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        <span
-          class="self-center text-2xl font-semibold whitespace-nowrap text-black"
-          id="logo"
-          >Web Kemiskinan</span
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
         >
-      </a>
-      <button
-        data-collapse-toggle="navbar-menu"
-        type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden focus:outline-none"
-        aria-controls="navbar"
-        aria-expanded="false"
-        id="toggle"
-      >
-        <span class="sr-only">menu</span>
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
-        
-        <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
-        >
-        <li></li>
-          <a
-            href="beranda.html"
-            class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
-            >Beranda</a
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-black"
+            id="logo"
+            >Web Kemiskinan</span
           >
-        </li>
-          <li
-            
+        </a>
+        <button
+          data-collapse-toggle="navbar-menu"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden focus:outline-none"
+          aria-controls="navbar"
+          aria-expanded="false"
+          id="toggle"
+        >
+          <span class="sr-only">menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
+          >
+            <li>
+              <a
+                href="beranda.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+                >Beranda</a
+              >
+            </li>
+            <li
               id="dropdownNavbarLink"
               data-dropdown-toggle="dropdownNavbar"
-              class="py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between"
+              class="py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link flex cursor-pointer items-center justify-between"
             >
               Data Kemiskinan
               <svg
@@ -89,7 +87,7 @@
                   d="m1 1 4 4 4-4"
                 />
               </svg>
-            </>
+            </li>
             <!-- Dropdown menu -->
             <div
               id="dropdownNavbar"
@@ -113,64 +111,134 @@
                     >Data Satu Dekade</a
                   >
                 </li>
+              </ul>
             </div>
-            <span
-              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
-            ></span>
-          </li>
-          <li>
-            <a
-              href="program.html"
-              class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
-              >Program</a
-            >
-          </li>
-          <li>
-            <a
-              href="laporan.html"
-              class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
-              >Laporan</a
-            >
-          </li>
-          <li>
-            <a
-              href="tentangKami.html"
-              class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link"
-              >Tentang Kami</a
-            >
-          </li>
-        </ul>
+            <li>
+              <a
+                href="program.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+                >Program</a
+              >
+            </li>
+            <li>
+              <a
+                href="laporan.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+                >Laporan</a
+              >
+            </li>
+            <li>
+              <a
+                href="tentangKami.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+                >Tentang Kami</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- navbar end -->
+    </nav>
+    <!-- navbar end -->
     <div>
-    <div class="text-center pt-20 font-bold text-1xl md:text-1xl">Persentase Kemiskinan Di Indonesia <br> Selama 10 Terakhir</div>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <div id="data-series-chart"></div>
+      <div class="text-center pt-20 font-bold text-1xl md:text-1xl">
+        Persentase Kemiskinan Di Indonesia <br />
+        Selama 10 Terakhir
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <div id="data-series-chart"></div>
       <div class="px-3">
-        <p class="mb-3 text-left text-justify text-gray-500 dark:text-gray-400">Badan Pusat Statistik (BPS) mencatat jumlah penduduk miskin pada Maret 2024 sebesar 25,22 juta orang. Angka ini menjadi yang terendah dalam 1 dekade terakhir. Sejak 2014 hingga 2024 kemiskinan sempat meningkat pada pandemi Covid-19 lalu menurun hingga Maret 2024.</p>
-        <p class="mb-3 text-left text-justify text-gray-500 dark:text-gray-400">Bahkan, jumlah penduduk miskin berkurang sekitar 3,06 juta orang atau turun sekitar 2,22 persen poin dalam sepuluh tahun terakhir. Jika di rata-rata jumlah penduduk miskin berkurang sekitar 300.000 orang per tahun.</p>
-        <p class="mb-3 text-left text-justify text-gray-500 dark:text-gray-400">Pada Maret 2014, jumlah penduduk miskin sebesar 28,28 juta  orang (11,25%). Setelah itu, tingkat kemiskinan terus menurun hingga Maret 2019 sebanyak 25,14 juta orang (9,41%). Namun, saat pandemi Covid-19 kemiskinan meningkat, yaitu pada Maret 2020 sebanyak 26,42 juta orang (9,78%) dan Maret 2021 sebanyak 27,54 juta orang (10,14%). Setelah periode tersebut, kemiskinan terus menurun sampai pada Maret 2024 sebanyak 25,22 juta orang (9,03%).</p>
+        <p class="mb-3 text-left text-justify text-gray-500 dark:text-gray-400">
+          Badan Pusat Statistik (BPS) mencatat jumlah penduduk miskin pada Maret
+          2024 sebesar 25,22 juta orang. Angka ini menjadi yang terendah dalam 1
+          dekade terakhir. Sejak 2014 hingga 2024 kemiskinan sempat meningkat
+          pada pandemi Covid-19 lalu menurun hingga Maret 2024.
+        </p>
+        <p class="mb-3 text-left text-justify text-gray-500 dark:text-gray-400">
+          Bahkan, jumlah penduduk miskin berkurang sekitar 3,06 juta orang atau
+          turun sekitar 2,22 persen poin dalam sepuluh tahun terakhir. Jika di
+          rata-rata jumlah penduduk miskin berkurang sekitar 300.000 orang per
+          tahun.
+        </p>
+        <p class="mb-3 text-left text-justify text-gray-500 dark:text-gray-400">
+          Pada Maret 2014, jumlah penduduk miskin sebesar 28,28 juta orang
+          (11,25%). Setelah itu, tingkat kemiskinan terus menurun hingga Maret
+          2019 sebanyak 25,14 juta orang (9,41%). Namun, saat pandemi Covid-19
+          kemiskinan meningkat, yaitu pada Maret 2020 sebanyak 26,42 juta orang
+          (9,78%) dan Maret 2021 sebanyak 27,54 juta orang (10,14%). Setelah
+          periode tersebut, kemiskinan terus menurun sampai pada Maret 2024
+          sebanyak 25,22 juta orang (9,03%).
+        </p>
+        <div class="container lg:mx-auto md:mx-auto pt-24 mb-10">
+          <h1
+            class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl"
+          >
+            Persentase Kemiskinan Di Indonesia Tahun 2014-2024
+          </h1>
+          <div class="flex justify-center mx-auto mt-6">
+            <span class="inline-block w-40 h-1 bg-teal-500 rounded-full"></span>
+            <span
+              class="inline-block w-3 h-1 mx-1 bg-teal-500 rounded-full"
+            ></span>
+            <span class="inline-block w-1 h-1 bg-teal-500 rounded-full"></span>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+          <div id="data-series-chart"></div>
+          <p class="text-gray-600 italic text-center text-sm">
+            Sumber: Badan Pusat Statistik (BPS)
+          </p>
+          <div
+            class="px-3 pt-10 text-justify"
+            data-aos="fade-right"
+            data-aos-duration="400"
+          >
+            <p class="mb-3 text-left text-justify">
+              Badan Pusat Statistik (BPS) mencatat jumlah penduduk miskin pada
+              Maret 2024 sebesar 25,22 juta orang. Angka ini menjadi yang
+              terendah dalam 1 dekade terakhir. Sejak 2014 hingga 2024
+              kemiskinan sempat meningkat pada pandemi Covid-19 lalu menurun
+              hingga Maret 2024. Bahkan, jumlah penduduk miskin berkurang
+              sekitar 3,06 juta orang atau turun sekitar 2,22 persen poin dalam
+              sepuluh tahun terakhir. Jika di rata-rata jumlah penduduk miskin
+              berkurang sekitar 300.000 orang per tahun.
+            </p>
+            <p class="mb-3 text-left text-justify">
+              Pada Maret 2014, jumlah penduduk miskin sebesar 28,28 juta orang
+              (11,25%). Setelah itu, tingkat kemiskinan terus menurun hingga
+              Maret 2019 sebanyak 25,14 juta orang (9,41%). Namun, saat pandemi
+              Covid-19 kemiskinan meningkat, yaitu pada Maret 2020 sebanyak
+              26,42 juta orang (9,78%) dan Maret 2021 sebanyak 27,54 juta orang
+              (10,14%). Setelah periode tersebut, kemiskinan terus menurun
+              sampai pada Maret 2024 sebanyak 25,22 juta orang (9,03%).
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-      <script>
-        const options = {
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      const options = {
         series: [
           {
             name: "Perkotaan",
-            data: [8.34, 8.29, 7.79, 7.72, 7.02, 6.69, 7.38, 7.89, 7.50, 7.29, 7.09],
+            data: [
+              8.34, 8.29, 7.79, 7.72, 7.02, 6.69, 7.38, 7.89, 7.5, 7.29, 7.09,
+            ],
             color: "#1A56DB",
           },
           {
             name: "Pedesaan",
-            data: [14.17, 14.21, 14.11, 13.93, 13.20, 12.85, 12.82, 13.10, 12.29, 12.22, 11.79],
+            data: [
+              14.17, 14.21, 14.11, 13.93, 13.2, 12.85, 12.82, 13.1, 12.29,
+              12.22, 11.79,
+            ],
             color: "#2ECC71",
           },
           {
             name: "Jumlah",
-            data: [11.25, 11.22, 10.86, 10.64, 9.82, 9.41, 9.78, 10.14, 9.54, 9.36, 9.03],
+            data: [
+              11.25, 11.22, 10.86, 10.64, 9.82, 9.41, 9.78, 10.14, 9.54, 9.36,
+              9.03,
+            ],
             color: "#FF3333",
           },
         ],
@@ -193,7 +261,7 @@
           },
         },
         legend: {
-          show: true
+          show: true,
         },
         fill: {
           type: "gradient",
@@ -216,11 +284,23 @@
           padding: {
             left: 2,
             right: 10,
-            top: 0
+            top: 0,
           },
         },
         xaxis: {
-          categories: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+          categories: [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+          ],
           labels: {
             show: true,
           },
@@ -234,12 +314,17 @@
         yaxis: {
           show: true,
         },
-        }
-        
-        if (document.getElementById("data-series-chart") && typeof ApexCharts !== 'undefined') {
-        const chart = new ApexCharts(document.getElementById("data-series-chart"), options);
+      };
+      if (
+        document.getElementById("data-series-chart") &&
+        typeof ApexCharts !== "undefined"
+      ) {
+        const chart = new ApexCharts(
+          document.getElementById("data-series-chart"),
+          options
+        );
         chart.render();
-        }
-              </script>
+      }
+    </script>
   </body>
 </html>

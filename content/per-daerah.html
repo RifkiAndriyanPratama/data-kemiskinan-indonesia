@@ -2,373 +2,666 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Kemiskinan</title>
-    <link rel="stylesheet" href="/src/output.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      thead {
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+      }
+      tbody {
+        border-bottom: 2px solid #000000;
+      }
+      th,
+      td {
+        border-left: 2px solid #000000;
+        border-right: 2px solid #000000;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
     <nav
-    class="bg-bahtera fixed z-10 w-full transition duration-300 ease-in-out shadow-lg"
-    id="navbar">
-    <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a
-        href="beranda.html"
-        class="flex items-center space-x-3 rtl:space-x-reverse">
-        <span
-          class="self-center text-2xl font-semibold whitespace-nowrap text-black"
-          id="logo"
-          >Web Kemiskinan</span>
-      </a>
-      <button
-        data-collapse-toggle="navbar-menu"
-        type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden focus:outline-none"
-        aria-controls="navbar"
-        aria-expanded="false"
-        id="toggle">
-        <span class="sr-only">menu</span>
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14">
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
-        <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
-          <a
-            href="beranda.html"
-            class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
-            >Beranda</a>
-        </li>
-        <li
-          id="dropdownNavbarLink"
-          data-dropdown-toggle="dropdownNavbar"
-          class="py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between">
-          Data Kemiskinan
+      class="bg-bahtera fixed z-10 w-full transition duration-300 ease-in-out shadow-lg"
+      id="navbar"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="beranda.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-black"
+            id="logo"
+            >Web Kemiskinan</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-menu"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden focus:outline-none"
+          aria-controls="navbar"
+          aria-expanded="false"
+          id="toggle"
+        >
+          <span class="sr-only">menu</span>
           <svg
-            class="w-2.5 h-2.5 ms-2.5"
+            class="w-5 h-5"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 10 6">
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 4 4 4-4"/>
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
+          >
+            <li>
+              <a
+                href="beranda.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+                >Beranda</a
+              >
+            </li>
+            <li
+              id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbar"
+              class="py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link flex cursor-pointer items-center justify-between"
+            >
+              Data Kemiskinan
+              <svg
+                class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
               </svg>
-            </>
+            </li>
             <!-- Dropdown menu -->
             <div
               id="dropdownNavbar"
-              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44">
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44"
+            >
               <ul
                 class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                aria-labelledby="dropdownLargeButton">
+                aria-labelledby="dropdownLargeButton"
+              >
                 <li>
-                  <a href="per-daerah.html" class="block px-4 py-2 hover:bg-gray-100 underline underline-offset-8 hover:text-black">Data Per-daerah</a>
+                  <a
+                    href="per-daerah.html"
+                    class="block px-4 py-2 hover:bg-gray-100 underline underline-offset-8 hover:text-black"
+                    >Data Per-daerah</a
+                  >
                 </li>
                 <li>
-                  <a href="satu-dekade.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Data Satu Dekade</a>
+                  <a
+                    href="satu-dekade.html"
+                    class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
+                    >Data Satu Dekade</a
+                  >
                 </li>
+              </ul>
             </div>
-            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
-          </li>
-          <li>
-            <a href="program.html" class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link">Program</a>
-          </li>
-          <li>
-            <a href="laporan.html" class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link">Laporan</a>
-          </li>
-          <li>
-            <a href="tentangKami.html" class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600  nav-link">Tentang Kami</a>
-          </li>
-        </ul>
+            <li>
+              <a
+                href="program.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+                >Program</a
+              >
+            </li>
+            <li>
+              <a
+                href="laporan.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+                >Laporan</a
+              >
+            </li>
+            <li>
+              <a
+                href="tentangKami.html"
+                class="block py-2 px-3 text-black rounded transition-all duration-300 hover:text-gray-600 nav-link"
+                >Tentang Kami</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- navbar end -->
+    </nav>
+    <!-- navbar end -->
     <div class="p-4 bg-white">
-    <div class="text-center pt-20 font-bold text-1xl md:text-1xl">Persentase Kemiskinan Berdasarkan <br>Daerah Bulan Maret Tahun 2024</div>
-    <div>
-      <img src="/src/img/per-daerah.png" class="h-auto w-full rounded-lg md:w-6" alt="per-daerah">
-    </div>
-    <div class="px-3 pt-10 text-left">
-      <p class="text-justify" data-aos="fade-right" data-aos-duration="400">
-        Angka kemiskinan di Indonesia pada Maret 2024 kembali turun menjadi 9,03%, dari 9,36% pada Maret 2023, dengan penurunan jumlah penduduk miskin sebesar 0,68 juta orang menjadi 25,22 juta. Baik di perkotaan maupun perdesaan, terjadi penurunan: kemiskinan di perkotaan turun ke 7,09% (dari 7,29%), dan di perdesaan menjadi 11,79% (dari 12,22%).
-      Penurunan tertinggi terjadi di Bali dan Nusa Tenggara. Rasio Gini juga menurun menjadi 0,379, level terendah dalam satu dekade, didorong oleh solidnya ekonomi domestik dan program bantuan sosial.
-      <br>
-      Meskipun kemiskinan menurun secara nasional, beberapa daerah masih mencatat angka tinggi. Jawa Barat memiliki penduduk miskin perkotaan terbanyak (2,92 juta jiwa), sementara Papua Pegunungan memiliki persentase tertinggi di perkotaan (16,56%). Di perdesaan, Jawa Timur mencatat jumlah penduduk miskin tertinggi (2,4 juta jiwa), sedangkan Papua Tengah memiliki persentase tertinggi (37,98%). Secara total, Jawa Timur memiliki jumlah penduduk miskin terbesar (3,98 juta jiwa), sementara Papua Pegunungan mencatat persentase kemiskinan tertinggi (32,97%).
-      </p>
-      <p class="text-gray-600 italic text-center text-sm">Sumber: CNBC Indonesia</p>
-    </div>
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg pt-10" data-aos="fade-in" data-aos-duration="400">
-      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-              <tr>
-                  <th scope="col" class="px-6 py-3">Provinsi</th>
-                  <th scope="col" class="px-6 py-3">Perkotaan</th>
-                  <th scope="col" class="px-6 py-3">Pedesaan</th>
-                  <th scope="col" class="px-6 py-3">Total</th>
-              </tr>
+      <div class="container lg:mx-auto md:mx-auto pt-20 mb-10">
+        <h1
+          class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl"
+        >
+          Persentase Kemiskinan Seluruh Provinsi Di Indonesia<br />Maret Tahun
+          2024
+        </h1>
+        <div class="flex justify-center mx-auto mt-6">
+          <span class="inline-block w-40 h-1 bg-teal-500 rounded-full"></span>
+          <span
+            class="inline-block w-3 h-1 mx-1 bg-teal-500 rounded-full"
+          ></span>
+          <span class="inline-block w-1 h-1 bg-teal-500 rounded-full"></span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <div
+            class="w-full self-center px-4 md:w-1/2 lg:w-1/2 mt-4 md:mt-0 md:ml-4"
+            data-aos="fade-right"
+          >
+            <img
+              src="/src/img/per-daerah.png"
+              alt=""
+              class="w-full h-auto rounded-lg mt-10"
+            />
+          </div>
+          <div
+            class="w-full self-center px-4 md:w-1/2 lg:w-1/2 text-center"
+            data-aos="fade-left"
+          >
+            <h2 class="font-medium text-xl mb-10 mt-4 text-justify">
+              Angka kemiskinan di Indonesia pada Maret 2024 kembali turun
+              menjadi 9,03%, dari 9,36% pada Maret 2023, dengan penurunan jumlah
+              penduduk miskin sebesar 0,68 juta orang menjadi 25,22 juta. Baik
+              di perkotaan maupun perdesaan, terjadi penurunan: kemiskinan di
+              perkotaan turun ke 7,09% (dari 7,29%), dan di perdesaan menjadi
+              11,79% (dari 12,22%). Penurunan tertinggi terjadi di Bali dan Nusa
+              Tenggara. Rasio Gini juga menurun menjadi 0,379, level terendah
+              dalam satu dekade, didorong oleh solidnya ekonomi domestik dan
+              program bantuan sosial.
+            </h2>
+            <p class="text-gray-600 italic text-center text-sm">
+              Sumber: CNBC Indonesia
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative overflow-x-auto shadow-md sm:rounded-lg mx-3 pt-10"
+        data-aos="fade-in"
+        data-aos-duration="400"
+      >
+        <table class="w-full text-sm text-left rtl:text-right text-bg-BLACK">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3">Provinsi</th>
+              <th scope="col" class="px-6 py-3">Perkotaan</th>
+              <th scope="col" class="px-6 py-3">Pedesaan</th>
+              <th scope="col" class="px-6 py-3">Total</th>
+            </tr>
           </thead>
           <tbody>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Aceh</th>
-                  <td class="px-6 py-4">9.60%</td>
-                  <td class="px-6 py-4">16.75%</td>
-                  <td class="px-6 py-4">14.23%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sumatera Utara</th>
-                  <td class="px-6 py-4">7.93%</td>
-                  <td class="px-6 py-4">8.08%</td>
-                  <td class="px-6 py-4">7.99%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sumatera Barat</th>
-                  <td class="px-6 py-4">4.72%</td>
-                  <td class="px-6 py-4">7.28%</td>
-                  <td class="px-6 py-4">5.97%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Riau</th>
-                  <td class="px-6 py-4">6.76%</td>
-                  <td class="px-6 py-4">6.61%</td>
-                  <td class="px-6 py-4">6.67%</td>
-              </tr>
-              <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Jambi</th>
-                  <td class="px-6 py-4">9.50%</td>
-                  <td class="px-6 py-4">5.90%</td>
-                  <td class="px-6 py-4">7.10%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sumatera Selatan</th>
-                  <td class="px-6 py-4">10.04%</td>
-                  <td class="px-6 py-4">11.53%</td>
-                  <td class="px-6 py-4">10.97%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bengkulu</th>
-                  <td class="px-6 py-4">13.56%</td>
-                  <td class="px-6 py-4">13.56%</td>
-                  <td class="px-6 py-4">13.56%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Lampung</th>
-                  <td class="px-6 py-4">8.18%</td>
-                  <td class="px-6 py-4">11.97%</td>
-                  <td class="px-6 py-4">10.69%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bangka Belitung</th>
-                  <td class="px-6 py-4">3.39%</td>
-                  <td class="px-6 py-4">6.17%</td>
-                  <td class="px-6 py-4">4.55%</td>
-              </tr>
-              <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kepulauan Riau</th>
-                  <td class="px-6 py-4">4.85%</td>
-                  <td class="px-6 py-4">9.94%</td>
-                  <td class="px-6 py-4">5.37%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">DKI Jakarta</th>
-                  <td class="px-6 py-4">4.30%</td>
-                  <td class="px-6 py-4">-</td>
-                  <td class="px-6 py-4">4.30%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Jawa Barat</th>
-                  <td class="px-6 py-4">7.07%</td>
-                  <td class="px-6 py-4">9.07%</td>
-                  <td class="px-6 py-4">7.46%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Jawa Tengah</th>
-                  <td class="px-6 py-4">9.71%</td>
-                  <td class="px-6 py-4">11.34%</td>
-                  <td class="px-6 py-4">10.47%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">DI Yogyakarta</th>
-                  <td class="px-6 py-4">10.29%</td>
-                  <td class="px-6 py-4">12.49%</td>
-                  <td class="px-6 py-4">10.83%</td>
-              </tr>
-              <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Jawa Timur</th>
-                  <td class="px-6 py-4">7.12%</td>
-                  <td class="px-6 py-4">13.30%</td>
-                  <td class="px-6 py-4">9.79%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Banten</th>
-                  <td class="px-6 py-4">5.69%</td>
-                  <td class="px-6 py-4">6.64%</td>
-                  <td class="px-6 py-4">5.84%</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bali</th>
-                <td class="px-6 py-4">3.55%</td>
-                <td class="px-6 py-4">5.20%</td>
-                <td class="px-6 py-4">4.00%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Aceh
+              </th>
+              <td class="px-6 py-4">9.60%</td>
+              <td class="px-6 py-4">16.75%</td>
+              <td class="px-6 py-4">14.23%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Nusa Tenggara Barat</th>
-                <td class="px-6 py-4">12.86%</td>
-                <td class="px-6 py-4">12.95%</td>
-                <td class="px-6 py-4">12.91%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Sumatera Utara
+              </th>
+              <td class="px-6 py-4">7.93%</td>
+              <td class="px-6 py-4">8.08%</td>
+              <td class="px-6 py-4">7.99%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Nusa Tenggara Timur</th>
-                <td class="px-6 py-4">8.57%</td>
-                <td class="px-6 py-4">23.41%</td>
-                <td class="px-6 py-4">19.48%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Sumatera Barat
+              </th>
+              <td class="px-6 py-4">4.72%</td>
+              <td class="px-6 py-4">7.28%</td>
+              <td class="px-6 py-4">5.97%</td>
             </tr>
-            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kalimantan Barat</th>
-                <td class="px-6 py-4">4.25%</td>
-                <td class="px-6 py-4">7.58%</td>
-                <td class="px-6 py-4">6.32%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Riau
+              </th>
+              <td class="px-6 py-4">6.76%</td>
+              <td class="px-6 py-4">6.61%</td>
+              <td class="px-6 py-4">6.67%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kalimantan Tengah</th>
-                <td class="px-6 py-4">4.89%</td>
-                <td class="px-6 py-4">5.38%</td>
-                <td class="px-6 py-4">5.17%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Jambi
+              </th>
+              <td class="px-6 py-4">9.50%</td>
+              <td class="px-6 py-4">5.90%</td>
+              <td class="px-6 py-4">7.10%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kalimantan Selatan</th>
-                <td class="px-6 py-4">3.62%</td>
-                <td class="px-6 py-4">4.61%</td>
-                <td class="px-6 py-4">4.11%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Sumatera Selatan
+              </th>
+              <td class="px-6 py-4">10.04%</td>
+              <td class="px-6 py-4">11.53%</td>
+              <td class="px-6 py-4">10.97%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kalimantan Timur</th>
-                <td class="px-6 py-4">4.47%</td>
-                <td class="px-6 py-4">8.76%</td>
-                <td class="px-6 py-4">5.78%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Bengkulu
+              </th>
+              <td class="px-6 py-4">13.56%</td>
+              <td class="px-6 py-4">13.56%</td>
+              <td class="px-6 py-4">13.56%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kalimantan Utara</th>
-                <td class="px-6 py-4">4.73%</td>
-                <td class="px-6 py-4">9.23%</td>
-                <td class="px-6 py-4">6.32%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Lampung
+              </th>
+              <td class="px-6 py-4">8.18%</td>
+              <td class="px-6 py-4">11.97%</td>
+              <td class="px-6 py-4">10.69%</td>
             </tr>
-            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sulawesi Utara</th>
-                <td class="px-6 py-4">4.73%</td>
-                <td class="px-6 py-4">10.35%</td>
-                <td class="px-6 py-4">7.25%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Bangka Belitung
+              </th>
+              <td class="px-6 py-4">3.39%</td>
+              <td class="px-6 py-4">6.17%</td>
+              <td class="px-6 py-4">4.55%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sulawesi Tengah</th>
-                <td class="px-6 py-4">8.61%</td>
-                <td class="px-6 py-4">13.33%</td>
-                <td class="px-6 py-4">11.77%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Kepulauan Riau
+              </th>
+              <td class="px-6 py-4">4.85%</td>
+              <td class="px-6 py-4">9.94%</td>
+              <td class="px-6 py-4">5.37%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sulawesi Selatan</th>
-                <td class="px-6 py-4">5.08%</td>
-                <td class="px-6 py-4">10.74%</td>
-                <td class="px-6 py-4">8.06%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                DKI Jakarta
+              </th>
+              <td class="px-6 py-4">4.30%</td>
+              <td class="px-6 py-4">-</td>
+              <td class="px-6 py-4">4.30%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sulawesi Tenggara</th>
-                <td class="px-6 py-4">7.45%/td>
-                <td class="px-6 py-4">13.60%</td>
-                <td class="px-6 py-4">11.21%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Jawa Barat
+              </th>
+              <td class="px-6 py-4">7.07%</td>
+              <td class="px-6 py-4">9.07%</td>
+              <td class="px-6 py-4">7.46%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Gorontalo</th>
-                <td class="px-6 py-4">4.57%</td>
-                <td class="px-6 py-4">22.97%</td>
-                <td class="px-6 py-4">14.57%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Jawa Tengah
+              </th>
+              <td class="px-6 py-4">9.71%</td>
+              <td class="px-6 py-4">11.34%</td>
+              <td class="px-6 py-4">10.47%</td>
             </tr>
-            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sulawesi Barat</th>
-                <td class="px-6 py-4">9.29%</td>
-                <td class="px-6 py-4">11.70%</td>
-                <td class="px-6 py-4">11.21%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                DI Yogyakarta
+              </th>
+              <td class="px-6 py-4">10.29%</td>
+              <td class="px-6 py-4">12.49%</td>
+              <td class="px-6 py-4">10.83%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Maluku</th>
-                <td class="px-6 py-4">5.14%</td>
-                <td class="px-6 py-4">24.43%</td>
-                <td class="px-6 py-4">16.05%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Jawa Timur
+              </th>
+              <td class="px-6 py-4">7.12%</td>
+              <td class="px-6 py-4">13.30%</td>
+              <td class="px-6 py-4">9.79%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Maluku Utara</th>
-                <td class="px-6 py-4">6.12%</td>
-                <td class="px-6 py-4">6.41%</td>
-                <td class="px-6 py-4">6.32%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Banten
+              </th>
+              <td class="px-6 py-4">5.69%</td>
+              <td class="px-6 py-4">6.64%</td>
+              <td class="px-6 py-4">5.84%</td>
             </tr>
-            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Papua Barat</th>
-                <td class="px-6 py-4">8.17%</td>
-                <td class="px-6 py-4">24.68%</td>
-                <td class="px-6 py-4">21.66%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Bali
+              </th>
+              <td class="px-6 py-4">3.55%</td>
+              <td class="px-6 py-4">5.20%</td>
+              <td class="px-6 py-4">4.00%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Papua Barat Daya</th>
-                <td class="px-6 py-4">8.15%</td>
-                <td class="px-6 py-4">27.78%</td>
-                <td class="px-6 py-4">18.13%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Nusa Tenggara Barat
+              </th>
+              <td class="px-6 py-4">12.86%</td>
+              <td class="px-6 py-4">12.95%</td>
+              <td class="px-6 py-4">12.91%</td>
             </tr>
-            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Papua</th>
-                <td class="px-6 py-4">6.33%</td>
-                <td class="px-6 py-4">33.67%</td>
-                <td class="px-6 py-4">17.26%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Nusa Tenggara Timur
+              </th>
+              <td class="px-6 py-4">8.57%</td>
+              <td class="px-6 py-4">23.41%</td>
+              <td class="px-6 py-4">19.48%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Papua Selatan</th>
-                <td class="px-6 py-4">3.10%</td>
-                <td class="px-6 py-4">25.64%</td>
-                <td class="px-6 py-4">17.44%</td>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Kalimantan Barat
+              </th>
+              <td class="px-6 py-4">4.25%</td>
+              <td class="px-6 py-4">7.58%</td>
+              <td class="px-6 py-4">6.32%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Papua Tengah</th>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Kalimantan Tengah
+              </th>
+              <td class="px-6 py-4">4.89%</td>
+              <td class="px-6 py-4">5.38%</td>
+              <td class="px-6 py-4">5.17%</td>
+            </tr>
+
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Kalimantan Selatan
+              </th>
+              <td class="px-6 py-4">3.62%</td>
+              <td class="px-6 py-4">4.61%</td>
+              <td class="px-6 py-4">4.11%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Kalimantan Timur
+              </th>
+              <td class="px-6 py-4">4.47%</td>
+              <td class="px-6 py-4">8.76%</td>
+              <td class="px-6 py-4">5.78%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Kalimantan Utara
+              </th>
+              <td class="px-6 py-4">4.73%</td>
+              <td class="px-6 py-4">9.23%</td>
+              <td class="px-6 py-4">6.32%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Sulawesi Utara
+              </th>
+              <td class="px-6 py-4">4.73%</td>
+              <td class="px-6 py-4">10.35%</td>
+              <td class="px-6 py-4">7.25%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Sulawesi Tengah
+              </th>
+              <td class="px-6 py-4">8.61%</td>
+              <td class="px-6 py-4">13.33%</td>
+              <td class="px-6 py-4">11.77%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Sulawesi Selatan
+              </th>
+              <td class="px-6 py-4">5.08%</td>
+              <td class="px-6 py-4">10.74%</td>
+              <td class="px-6 py-4">8.06%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Sulawesi Tenggara
+              </th>
+              <td class="px-6 py-4">7.45%</td>
+              <td class="px-6 py-4">13.60%</td>
+              <td class="px-6 py-4">11.21%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Gorontalo
+              </th>
+              <td class="px-6 py-4">4.57%</td>
+              <td class="px-6 py-4">22.97%</td>
+              <td class="px-6 py-4">14.57%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Sulawesi Barat
+              </th>
+              <td class="px-6 py-4">9.29%</td>
+              <td class="px-6 py-4">11.70%</td>
+              <td class="px-6 py-4">11.21%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Maluku
+              </th>
+              <td class="px-6 py-4">5.14%</td>
+              <td class="px-6 py-4">24.43%</td>
+              <td class="px-6 py-4">16.05%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Maluku Utara
+              </th>
+              <td class="px-6 py-4">6.12%</td>
+              <td class="px-6 py-4">6.41%</td>
+              <td class="px-6 py-4">6.32%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Papua Barat
+              </th>
+              <td class="px-6 py-4">8.17%</td>
+              <td class="px-6 py-4">24.68%</td>
+              <td class="px-6 py-4">21.66%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Papua Barat Daya
+              </th>
+              <td class="px-6 py-4">8.15%</td>
+              <td class="px-6 py-4">27.78%</td>
+              <td class="px-6 py-4">18.13%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Papua
+              </th>
+              <td class="px-6 py-4">6.33%</td>
+              <td class="px-6 py-4">33.67%</td>
+              <td class="px-6 py-4">17.26%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Papua Selatan
+              </th>
+              <td class="px-6 py-4">3.10%</td>
+              <td class="px-6 py-4">25.64%</td>
+              <td class="px-6 py-4">17.44%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Papua Tengah
+              </th>
               <td class="px-6 py-4">4.32%</td>
               <td class="px-6 py-4">37.98%</td>
               <td class="px-6 py-4">29.76%</td>
-          </tr>
-            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Papua Pegunungan</th>
-                <td class="px-6 py-4">16.56%</td>
-                <td class="px-6 py-4">34.21%</td>
-                <td class="px-6 py-4">32.97%</td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Indonesia</th>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Papua Pegunungan
+              </th>
+              <td class="px-6 py-4">16.56%</td>
+              <td class="px-6 py-4">34.21%</td>
+              <td class="px-6 py-4">32.97%</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-300">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-black whitespace-nowrap"
+              >
+                Indonesia
+              </th>
               <td class="px-6 py-4">7.09%</td>
               <td class="px-6 py-4">11.79%</td>
-              <td class="px-6 py-4">9.03%%</td>
-          </tr>
+              <td class="px-6 py-4">9.03%</td>
+            </tr>
           </tbody>
-      </table>
-      <p class="text-gray-600 italic text-center text-sm">Sumber:Badan Pusat Statistik (BPS)</p>
+        </table>
+        <p class="text-gray-600 italic text-center text-sm">
+          Sumber: Badan Pusat Statistik (BPS)
+        </p>
+      </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>  
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   </body>
 </html>
