@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bahtera: "#3A6D8C",
+        bahtera: "#001F3F",
       },
     },
   },

@@ -11,7 +11,7 @@
   <!-- Navbar -->
   <nav class="bg-bahtera fixed z-10 w-full transition duration-300 ease-in-out shadow-lg top-0" id="navbar">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="beranda.html" class="flex items-center space-x-3 rtl:space-x-reverse">
         <span class="self-center text-4xl italic font-sans font-semibold whitespace-nowrap text-white" id="logo">Bahtera</span>
       </a>
       <button
@@ -39,26 +39,20 @@
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
-          <a
-            href="beranda.html"
-            class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 nav-link"
-            >Beranda</a
-          >
-        </li>
-          <li
-            
-              id="dropdownNavbarLink"
-              data-dropdown-toggle="dropdownNavbar"
-              class="py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between"
-            >
-              Data Kemiskinan
-              <svg
-                class="w-2.5 h-2.5 ms-2.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
+          <li>
+            <a href="beranda.html" class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 nav-link">Beranda</a>
+          </li>
+        <li
+          id="dropdownNavbarLink"
+          data-dropdown-toggle="dropdownNavbar"
+          class="py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link flex cursor-pointer items-center justify-between">
+            Data Kemiskinan
+            <svg
+              class="w-2.5 h-2.5 ms-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6">
                 <path
                   stroke="currentColor"
                   stroke-linecap="round"
@@ -71,51 +65,25 @@
             <!-- Dropdown menu -->
             <div
               id="dropdownNavbar"
-              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44"
-            >
-              <ul
-                class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                aria-labelledby="dropdownLargeButton"
-              >
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44">
+              <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                 <li>
-                  <a
-                    href="per-daerah.html"
-                    class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
-                    >Data Per-daerah</a
-                  >
+                  <a href="per-daerah.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Data Per-daerah</a>
                 </li>
                 <li>
-                  <a
-                    href="satu-dekade.html"
-                    class="block px-4 py-2 hover:bg-gray-100 hover:text-black"
-                    >Data Satu Dekade</a
-                  >
+                  <a href="satu-dekade.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Data Satu Dekade</a>
                 </li>
             </div>
-            <span
-              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
-            ></span>
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
           </li>
           <li>
-            <a
-              href="program.html"
-              class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 nav-link"
-              >Program</a
-            >
+            <a href="program.html" class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 nav-link">Program</a>
           </li>
           <li>
-            <a
-              href="laporan.html"
-              class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600  nav-link"
-              >Laporan</a
-            >
+            <a href="laporan.html" class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 nav-link">Laporan</a>
           </li>
           <li>
-            <a
-              href="tentangKami.html"
-              class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 underline underline-offset-8 nav-link"
-              >Tentang Kami</a
-            >
+            <a href="tentangKami.html" class="block py-2 px-3 text-white rounded transition-all duration-300 hover:text-gray-600 underline underline-offset-8 nav-link">Tentang Kami</a>
           </li>
         </ul>
       </div>
@@ -132,21 +100,11 @@
       <span class="inline-block w-1 h-1 bg-teal-500 rounded-full"></span>
   </div>
     <div class="flex flex-col md:flex-row items-center justify-center">
-      <div
-        class="w-full self-center px-4 md:w-1/2 lg:w-1/2 mt-4 md:mt-0 md:ml-4"
-        data-aos="fade-right"
-      >
-        <img
-          src="/src/img/bahtera.png"
-          alt=""
-          class="w-full h-auto rounded-lg mt-10"
-        />
+      <div class="w-full self-center px-4 md:w-1/2 lg:w-1/2 mt-4 md:mt-0 md:ml-4" data-aos="fade-right">
+        <img src="/src/img/bahtera.png" alt="bahtera" class="w-full h-auto rounded-lg mt-10"/>
       </div>
-      <div
-        class="w-full self-center px-4 md:w-1/2 lg:w-1/2 text-center"
-        data-aos="fade-left"
-      >
-        <h1 class="text-4xl font-semibold text-center md:text-left text-teal-600">BAHTERA</h1>
+      <div class="w-full self-center px-4 md:w-1/2 lg:w-1/2 text-center" data-aos="fade-left">
+        <h1 class="text-4xl font-semibold text-center md:text-left text-bahtera">BAHTERA</h1>
         <h2 class="font-medium text-xl mb-10 text-slate-600 mt-4 text-justify">
           BAHTERA (Basis Data kesejahteraan Keluarga) adalah platform yang bertujuan untuk menyediakan data dan informasi terkini mengenai kondisi kemiskinan di seluruh wilayah Indonesia. Dengan mengedepankan transparansi dan akurasi, platform ini dirancang untuk menjadi sumber daya utama dalam mendukung pengambilan kebijakan yang tepat sasaran dalam upaya pengentasan kemiskinan. Melalui data yang komprehensif dan analisis yang mendalam, kami berharap dapat berkontribusi dalam meningkatkan kualitas hidup masyarakat serta mempersempit kesenjangan sosial di Indonesia.
         </h2>
@@ -159,8 +117,7 @@
 <section class="bg-white">
   <div class="h-[32rem] bg-gray-100">
       <div class="container px-6 py-10 mx-auto">
-          <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl pt-20">Tim DARINO</h1>
-
+          <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl pt-20">Tim <span class="text-bahtera">DARINO</span></h1>
           <div class="flex justify-center mx-auto mt-6">
               <span class="inline-block w-40 h-1 bg-teal-500 rounded-full"></span>
               <span class="inline-block w-3 h-1 mx-1 bg-teal-500 rounded-full"></span>
@@ -168,23 +125,18 @@
           </div>
       </div>
   </div>
-
   <div class="container px-6 py-10 mx-auto -mt-72 sm:-mt-80 md:-mt-96 pt-10">
       <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
           <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl" data-aos="flip-left" data-aos-duration="1000">
               <img class="object-cover w-full rounded-xl aspect-square" src="/src/img/tim/danu.png" alt="">
               <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize ">Danu Wisesa</h1>
           </div>
-
           <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl " data-aos="flip-left" data-aos-duration="1500">
               <img class="object-cover w-full rounded-xl aspect-square" src="/src/img/tim/rifki.png" alt="">
-
               <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize ">Rifki Andriyan Pratama</h1>
           </div>
-
           <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl" data-aos="flip-left" data-aos-duration="2000">
               <img class="object-cover w-full rounded-xl aspect-square" src="/src/img/tim/noven.png" alt="">
-
               <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize ">Noventino Putra Nurmansyah</h1>
           </div>
       </div>
