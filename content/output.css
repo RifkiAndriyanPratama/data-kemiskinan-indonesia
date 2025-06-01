@@ -1117,10 +1117,6 @@ video {
   text-align: justify;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1356,11 +1352,6 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:shadow-2xl:hover {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1569,25 +1560,8 @@ video {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark\:bg-gray-800\/30 {
-    background-color: rgb(31 41 55 / 0.3);
-  }
-
   .dark\:text-gray-400 {
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-gray-800 {
-    --tw-text-opacity: 1;
-    color: rgb(31 41 55 / var(--tw-text-opacity));
-  }
-
-  .group:hover .dark\:group-hover\:bg-gray-800\/60 {
-    background-color: rgb(31 41 55 / 0.6);
-  }
-
-  .group:focus .dark\:group-focus\:ring-gray-800\/70 {
-    --tw-ring-color: rgb(31 41 55 / 0.7);
   }
 }
